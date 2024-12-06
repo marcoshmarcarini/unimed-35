@@ -9,6 +9,7 @@ export default function MergeImage() {
     const [uploadImage, setUploadImage] = useState<string | null>(null)
     const [mergedImage, setMergedImage] = useState<string | null>(null)
     const [svgImagePath, setSvgImagePath] = useState<string | null>(null)
+    const [converting, setConverting] = useState('')
 
     const resizeImage = (
         imageSrc: string,
@@ -121,6 +122,7 @@ export default function MergeImage() {
             const svgPath = await convertSVGToImage(svgElement)
             setSvgImagePath(svgPath)
             console.log('SVG convertido com sucesso!')
+            setConverting('Seus dados foram processados, vamos para o próximo passo!')
         } catch (error) {
             console.error('Erro ao converter SVG:', error)
             console.log('Erro ao converter SVG.')
@@ -162,6 +164,7 @@ export default function MergeImage() {
             <p className={styles.description}>
                 Demonstre o seu carinho pela Unimed Sul Capixaba. Crie sua moldura abaixo.
             </p>
+            <p className={styles.part_1}>Insira o seu nome e o seu tempo consoco.</p>
             <div>
                 <Moldura nome={nome} anos={anos} />
                 {/* {svgImagePath && (
@@ -205,8 +208,9 @@ export default function MergeImage() {
                     />
                 </div>
                 <button onClick={handleConvertSVG} className={styles.button_criar_moldura}>
-                    Criar Moldura
+                    Próximo
                 </button>
+                <p>{converting}</p>
                 <label
                     htmlFor="fileUp"
                     className={styles.label_file}

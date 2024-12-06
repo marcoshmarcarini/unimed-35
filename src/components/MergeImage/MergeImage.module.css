@@ -19,6 +19,20 @@
   color: var(--green-1);
 }
 
+.part_1{
+  text-align: center;
+  color: var(--green-1);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  text-wrap: wrap;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-style: italic;
+}
+
 .inputs_area {
   display: flex;
   flex-direction: column;
