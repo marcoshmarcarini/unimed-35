@@ -1,0 +1,245 @@
+.moldura {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_moldura {
+  width: 1080px;
+  height: 1080px;
+  display: none;
+}
+
+.cls_1 {
+  fill: url(#linear-gradient-2);
+}
+
+.cls_2 {
+  letter-spacing: 0em;
+}
+
+.cls_3 {
+  letter-spacing: -0.06em;
+}
+
+.cls_4 {
+  letter-spacing: -0.06em;
+}
+
+.cls_5 {
+  letter-spacing: -0.04em;
+}
+
+.cls_6 {
+  letter-spacing: -0.05em;
+}
+
+.cls_7,
+.cls_8,
+.cls_9 {
+  fill: #fff;
+}
+
+.cls_10 {
+  letter-spacing: -0.07em;
+}
+
+.cls_11 {
+  letter-spacing: -0.08em;
+}
+
+.cls_12 {
+  letter-spacing: 0em;
+}
+
+.cls_13,
+.cls_14 {
+  fill: none;
+}
+
+.cls_15 {
+  letter-spacing: 0em;
+}
+
+.cls_16 {
+  letter-spacing: -0.06em;
+}
+
+.cls_17 {
+  letter-spacing: -0.04em;
+}
+
+.cls_8 {
+  font-family: UnimedSans-Bold, 'Unimed Sans';
+  font-size: 31.39px;
+}
+
+.cls_8,
+.cls_18,
+.cls_14,
+.cls_9 {
+  font-weight: 700;
+}
+
+.cls_19 {
+  letter-spacing: -0.08em;
+}
+
+.cls_20 {
+  letter-spacing: -0.04em;
+}
+
+.cls_21 {
+  letter-spacing: -0.05em;
+}
+
+.cls_22 {
+  letter-spacing: -0.04em;
+}
+
+.cls_23 {
+  letter-spacing: -0.09em;
+}
+
+.cls_24,
+.cls_25 {
+  fill: #038c51;
+}
+
+.cls_18 {
+  font-size: 163.69px;
+}
+
+.cls_18,
+.cls_26 {
+  fill: #08484c;
+}
+
+.cls_18,
+.cls_14 {
+  font-family: UnimedSans-ExtraBoldItalic, 'Unimed Sans';
+}
+
+.cls_18,
+.cls_14,
+.cls_25 {
+  font-style: italic;
+}
+
+.cls_27 {
+  letter-spacing: -0.06em;
+}
+
+.cls_26 {
+  font-family: UnimedSans-Regular, 'Unimed Sans';
+  font-size: 29.44px;
+}
+
+.cls_28 {
+  letter-spacing: 0em;
+}
+
+.cls_29 {
+  letter-spacing: -0.04em;
+}
+
+.cls_30 {
+  letter-spacing: -0.05em;
+}
+
+.cls_31 {
+  letter-spacing: -0.04em;
+}
+
+.cls_32 {
+  letter-spacing: 0.75em;
+}
+
+.cls_33 {
+  letter-spacing: 0em;
+}
+
+.cls_34 {
+  letter-spacing: 0em;
+}
+
+.cls_35 {
+  letter-spacing: -0.04em;
+}
+
+.cls_36 {
+  letter-spacing: 0em;
+}
+
+.cls_37 {
+  letter-spacing: -0.06em;
+}
+
+.cls_38 {
+  letter-spacing: -0.05em;
+}
+
+.cls_39 {
+  fill: #078d52;
+}
+
+.cls_40 {
+  letter-spacing: 0.76em;
+}
+
+.cls_41 {
+  letter-spacing: 0.76em;
+}
+
+.cls_42 {
+  letter-spacing: 0em;
+}
+
+.cls_43 {
+  letter-spacing: -0.04em;
+}
+
+.cls_14 {
+  font-size: 653.55px;
+  stroke: #08484c;
+  stroke-miterlimit: 10;
+}
+
+.cls_44 {
+  letter-spacing: 0em;
+}
+
+.cls_25 {
+  font-family: UnimedSans-BlackItalic, 'Unimed Sans';
+  font-size: 45.11px;
+  font-weight: 800;
+}
+
+.cls_45 {
+  letter-spacing: -0.13em;
+}
+
+.cls_46 {
+  letter-spacing: -0.06em;
+}
+
+.cls_47 {
+  fill: url(#linear-gradient);
+}
+
+.cls_48 {
+  clip-path: url(#clippath);
+}
+
+.cls_49 {
+  fill: #afcc4d;
+}
+
+.cls_9 {
+  font-family: UnimedSans-ExtraBold, 'Unimed Sans';
+  font-size: 32.74px;
+}
+
+.cls_50 {
+  letter-spacing: 0em;
+}
