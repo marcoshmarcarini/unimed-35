@@ -4,20 +4,72 @@ import { useState } from "react"
 import styles from "./MergeImage.module.css"
 
 export default function MergeImage() {
-    const [nome, setNome] = useState('Seu Nome')
+    const [nome, setNome] = useState('')
     const [anos, setAnos] = useState(0)
     const [uploadImage, setUploadImage] = useState<string | null>(null)
     const [mergedImage, setMergedImage] = useState<string | null>(null)
     const [svgImagePath, setSvgImagePath] = useState<string | null>(null)
 
-    const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const resizeImage = (
+        imageSrc: string,
+        targetWidth: number,
+        targetHeight: number
+      ): Promise<string> => {
+        return new Promise((resolve, reject) => {
+          const img = new Image()
+          img.onload = () => {
+            const canvas = document.createElement('canvas')
+            canvas.width = targetWidth
+            canvas.height = targetHeight
+      
+            const ctx = canvas.getContext('2d')
+            if (ctx) {
+              // Preenche o fundo com transparência, se necessário
+              ctx.clearRect(0, 0, canvas.width, canvas.height)
+      
+              // Calcula o fator de escala para manter a proporção
+              const scale = Math.min(
+                targetWidth / img.width,
+                targetHeight / img.height
+              )
+      
+              const newWidth = img.width * scale
+              const newHeight = img.height * scale
+      
+              // Centraliza a imagem no canvas
+              const offsetX = (targetWidth - newWidth) / 2
+              const offsetY = (targetHeight - newHeight) / 2
+      
+              ctx.drawImage(img, offsetX, offsetY, newWidth, newHeight)
+      
+              resolve(canvas.toDataURL('image/png'))
+            } else {
+              reject('Erro ao obter contexto do canvas.')
+            }
+          }
+          img.onerror = () => reject('Erro ao carregar a imagem.')
+          img.src = imageSrc
+        })
+      }
+
+      const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0]
         if (file) {
-            const reader = new FileReader()
-            reader.onload = () => setUploadImage(reader.result as string)
-            reader.readAsDataURL(file)
+          const reader = new FileReader()
+          reader.onload = async () => {
+            const base64Image = reader.result as string
+      
+            try {
+              // Redimensiona a imagem para caber na moldura (ajuste as dimensões conforme necessário)
+              const resizedImage = await resizeImage(base64Image, 400, 500)
+              setUploadImage(resizedImage)
+            } catch (error) {
+              console.error('Erro ao redimensionar a imagem:', error)
+            }
+          }
+          reader.readAsDataURL(file)
         }
-    }
+      }
 
     const convertSVGToImage = (svgElement: SVGSVGElement): Promise<string> => {
         return new Promise((resolve, reject) => {
@@ -88,7 +140,7 @@ export default function MergeImage() {
 
             const result = await mergeImages(
                 [
-                    { src: uploadImage, x: 90, y: 310 },
+                    { src: uploadImage, x: 75, y: 280 },
                     { src: svgImagePath, x: 0, y: 0 },
                 ],
                 {
@@ -165,6 +217,7 @@ export default function MergeImage() {
                     id="fileUp"
                     type="file"
                     accept="image/*"
+                    capture="user"
                     onChange={handleFileUpload}
                     className={styles.input_file}
                 />
