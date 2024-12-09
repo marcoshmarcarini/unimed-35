@@ -1,6 +1,10 @@
 'use client'
 
 import styles from './Moldura.module.css'
+import { UnimedExtraBoldItalic, UnimedRegular, UnimedBlackItalic, UnimedBold } from '../Fonts/page'
+
+
+
 
 interface MolduraProps {
     nome: string
@@ -8,6 +12,7 @@ interface MolduraProps {
 }
 
 export default function Moldura({nome, anos}: MolduraProps) {
+
 
     return(
         <div className={styles.moldura}>
@@ -79,9 +84,10 @@ export default function Moldura({nome, anos}: MolduraProps) {
                         transform="translate(387.77 454.72)"
                     >
                         <tspan 
-                            className={styles.cls_4} 
+                            className={`${styles.cls_4} ${UnimedExtraBoldItalic.style} `} 
                             x="50" 
                             y="0"
+
                         >
                             {anos}
                         </tspan>
@@ -114,7 +120,7 @@ export default function Moldura({nome, anos}: MolduraProps) {
                     </g>
                     <path className={styles.cls_49} d="M450.62,314.78h493.61c24.16,0,43.77,19.61,43.77,43.77v380.46c0,24.16-19.61,43.77-43.77,43.77h-449.85c-24.16,0-43.77-19.61-43.77-43.77v-424.23h0Z"/>
                     <g>
-                    <text className={styles.cls_26} transform="translate(500.59 615.59)">
+                    <text className={`${styles.cls_26} ${UnimedRegular.style}`} transform="translate(500.59 615.59)">
                         <tspan x="0" y="0">Sua </tspan>
                         <tspan className={styles.cls_15} x="55.67" y="0">c</tspan>
                         <tspan x="69.77" y="0">o</tspan>
@@ -154,7 +160,7 @@ export default function Moldura({nome, anos}: MolduraProps) {
                         <tspan className={styles.cls_34} x="229.62" y="105.98">t</tspan>
                         <tspan className={styles.cls_42} x="240.66" y="105.98">os!</tspan>
                     </text>
-                    <text className={styles.cls_25} transform="translate(500.59 406.61)">
+                    <text className={`${styles.cls_25} ${UnimedBlackItalic.style}`} transform="translate(500.59 406.61)">
                         <tspan className={styles.cls_10} x="0" y="0">P</tspan>
                         <tspan className={styles.cls_22} x="25.75" y="0">a</tspan>
                         <tspan className={styles.cls_27} x="50.88" y="0">r</tspan>
@@ -199,10 +205,10 @@ export default function Moldura({nome, anos}: MolduraProps) {
                     </text>
                     <g>
                     <text className={styles.cls_18} transform="translate(360.8 228.8)">
-                        <tspan className={styles.cls_16} x="0" y="0">{anos}</tspan>
+                        <tspan className={`${styles.cls_16} ${UnimedExtraBoldItalic.style}`} x="0" y="0">{anos}</tspan>
                         {/* <tspan className={styles.cls_35} x="95.59" y="0">7</tspan> */}
                     </text>
-                    <text className={styles.cls_8} transform="translate(563.53 190.07)">
+                    <text className={`${styles.cls_8} ${UnimedBold.style}`} transform="translate(563.53 190.07)">
                         <tspan className={styles.cls_40} x="0" y="0">AN</tspan>
                         <tspan className={styles.cls_32} x="91.69" y="0">O</tspan>
                         <tspan className={styles.cls_41} x="139.06" y="0">S</tspan>
