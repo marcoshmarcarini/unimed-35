@@ -108,7 +108,13 @@
 }
 
 .cls_25 tspan {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
+}
+
+@media (max-width:500px) {
+  .cls_25 tspan {
+    font-size: 2.4rem;
+  }
 }
 
 .cls_18 {
