@@ -221,7 +221,6 @@ export default function MergeImage() {
                     id="fileUp"
                     type="file"
                     accept="image/*"
-                    capture="user"
                     onChange={handleFileUpload}
                     className={styles.input_file}
                 />
