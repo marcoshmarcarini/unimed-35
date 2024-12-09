@@ -122,93 +122,31 @@ export default function Moldura({ nome, anos }: MolduraProps) {
                     <g>
                         <text className={`${styles.cls_26} ${UnimedRegular.style}`} transform="translate(500.59 615.59)">
                             <tspan x="0" y="0">
-                                Sua contribuição é essencial <br />
+                                Sua contribuição é essencial
                             </tspan>
-                            <tspan>
-                                para o nosso sucesso.<br />
+                            <tspan x="0" y="35">
+                                para o nosso sucesso.
                             </tspan>
-                            <tspan>
-                                Que venham muitos mais anos<br />
+                            <tspan x="0" y="70">
+                                Que venham muitos mais anos
                             </tspan>
-                            <tspan>
-                                de conquistas juntos!<br />
+                            <tspan x="0" y="105">
+                                de conquistas juntos!
                             </tspan>
-                            {/* <tspan className={styles.cls_15} x="55.67" y="0">c</tspan>
-                            <tspan x="69.77" y="0">o</tspan>
-                            <tspan className={styles.cls_50} x="86.49" y="0">n</tspan>
-                            <tspan x="102.89" y="0">tribuição é e</tspan>
-                            <tspan className={styles.cls_44} x="264.62" y="0">s</tspan>
-                            <tspan x="278.51" y="0">senci</tspan>
-                            <tspan className={styles.cls_50} x="346.72" y="0">a</tspan>
-                            <tspan className={styles.cls_33} x="361.59" y="0">l</tspan>
-                            <tspan className={styles.cls_28} x="0" y="35.33">p</tspan>
-                            <tspan x="16.72" y="35.33">a</tspan>
-                            <tspan className={styles.cls_28} x="31.7" y="35.33">r</tspan>
-                            <tspan className={styles.cls_42} x="42.27" y="35.33">a o no</tspan>
-                            <tspan className={styles.cls_44} x="120.81" y="35.33">s</tspan>
-                            <tspan x="134.71" y="35.33">so su</tspan>
-                            <tspan className={styles.cls_15} x="202.89" y="35.33">c</tspan>
-                            <tspan x="216.99" y="35.33">e</tspan>
-                            <tspan className={styles.cls_44} x="232.74" y="35.33">s</tspan>
-                            <tspan x="246.63" y="35.33">so.</tspan>
-                            <tspan className={styles.cls_12} x="0" y="70.65">Q</tspan>
-                            <tspan className={styles.cls_33} x="22.2" y="70.65">ue </tspan>
-                            <tspan className={styles.cls_2} x="61.26" y="70.65">v</tspan>
-                            <tspan x="75.6" y="70.65">e</tspan>
-                            <tspan className={styles.cls_15} x="91.35" y="70.65">n</tspan>
-                            <tspan x="107.74" y="70.65">ham mui</tspan>
-                            <tspan className={styles.cls_34} x="221.79" y="70.65">t</tspan>
-                            <tspan x="232.83" y="70.65">os m</tspan>
-                            <tspan className={styles.cls_36} x="296.15" y="70.65">a</tspan>
-                            <tspan x="311.25" y="70.65">is anos</tspan>
-                            <tspan x="0" y="105.98">de </tspan>
-                            <tspan className={styles.cls_50} x="39.56" y="105.98">c</tspan>
-                            <tspan x="53.67" y="105.98">onqui</tspan>
-                            <tspan className={styles.cls_34} x="127.82" y="105.98">s</tspan>
-                            <tspan className={styles.cls_50} x="141.66" y="105.98">t</tspan>
-                            <tspan x="152.81" y="105.98">as ju</tspan>
-                            <tspan className={styles.cls_50} x="213.22" y="105.98">n</tspan>
-                            <tspan className={styles.cls_34} x="229.62" y="105.98">t</tspan>
-                            <tspan className={styles.cls_42} x="240.66" y="105.98">os!</tspan> */}
                         </text>
                         <text className={`${styles.cls_25} ${UnimedBlackItalic.style}`} transform="translate(500.59 406.61)">
-                            <tspan className={styles.cls_10} x="0" y="0">P</tspan>
-                            <tspan className={styles.cls_22} x="25.75" y="0">a</tspan>
-                            <tspan className={styles.cls_27} x="50.88" y="0">r</tspan>
-                            <tspan className={styles.cls_17} x="66.44" y="0">a</tspan>
-                            <tspan className={styles.cls_43} x="91.34" y="0">béns por mais</tspan>
-                            <tspan className={styles.cls_29} x="0" y="47">um</tspan>
-                            <tspan className={styles.cls_10} x="59.76" y="47"></tspan>
-                            <tspan className={styles.cls_43} x="65.63" y="47">ano</tspan>
-                            <tspan className={styles.cls_10} x="138.34" y="47"></tspan>
-                            <tspan className={styles.cls_30} x="144.2" y="47">d</tspan>
-                            <tspan className={styles.cls_22} x="169.01" y="47">e</tspan>
-                            <tspan className={styles.cls_10} x="192.1" y="47"></tspan>
-                            <tspan className={styles.cls_6} x="197.97" y="47">d</tspan>
-                            <tspan className={styles.cls_43} x="222.77" y="47">edi</tspan>
-                            <tspan className={styles.cls_37} x="282.18" y="47">c</tspan>
-                            <tspan className={styles.cls_43} x="301.57" y="47">a</tspan>
-                            <tspan className={styles.cls_37} x="326.69" y="47">ç</tspan>
-                            <tspan className={styles.cls_43} x="346.09" y="47">ão</tspan>
-                            <tspan className={styles.cls_29} x="0" y="94.01">e</tspan>
-                            <tspan className={styles.cls_10} x="23.09" y="94.01"></tspan>
-                            <tspan className={styles.cls_46} x="28.96" y="94.01">c</tspan>
-                            <tspan className={styles.cls_43} x="48.35" y="94.01">omp</tspan>
-                            <tspan className={styles.cls_3} x="133.83" y="94.01">r</tspan>
-                            <tspan className={styles.cls_43} x="149.39" y="94.01">om</tspan>
-                            <tspan className={styles.cls_30} x="209.69" y="94.01">e</tspan>
-                            <tspan className={styles.cls_43} x="232.34" y="94.01">time</tspan>
-                            <tspan className={styles.cls_30} x="318.13" y="94.01">n</tspan>
-                            <tspan className={styles.cls_27} x="341.04" y="94.01">t</tspan>
-                            <tspan className={styles.cls_22} x="355.7" y="94.01">o na</tspan>
-                            <tspan className={styles.cls_29} x="0" y="141.01">Unimed </tspan>
-                            <tspan className={styles.cls_30} x="156.56" y="141.01">S</tspan>
-                            <tspan className={styles.cls_43} x="181.82" y="141.01">ul </tspan>
-                            <tspan className={styles.cls_11} x="226.52" y="141.01">C</tspan>
-                            <tspan className={styles.cls_43} x="251.64" y="141.01">api</tspan>
-                            <tspan className={styles.cls_23} x="312.98" y="141.01">x</tspan>
-                            <tspan className={styles.cls_17} x="335.22" y="141.01">a</tspan>
-                            <tspan className={styles.cls_22} x="360.12" y="141.01">ba!</tspan>
+                            <tspan x="0" y="0">
+                                Parabéns por mais
+                            </tspan>
+                            <tspan x="0" y="45">
+                                um ano de dedicação
+                            </tspan>
+                            <tspan x="0" y="90">
+                                e comprometimento na
+                            </tspan>
+                            <tspan x="0" y="135">
+                                Unimed Sul Capixaba!
+                            </tspan>
                         </text>
                     </g>
                     <text className={styles.cls_9} transform="translate(159.41 774.13)">
@@ -220,9 +158,10 @@ export default function Moldura({ nome, anos }: MolduraProps) {
                             {/* <tspan className={styles.cls_35} x="95.59" y="0">7</tspan> */}
                         </text>
                         <text className={`${styles.cls_8} ${UnimedBold.style}`} transform="translate(563.53 190.07)">
-                            <tspan className={styles.cls_40} x="0" y="0">AN</tspan>
+                            <tspan x="0" y="0">ANOS</tspan>
+                            {/* <tspan className={styles.cls_40} x="0" y="0">AN</tspan>
                             <tspan className={styles.cls_32} x="91.69" y="0">O</tspan>
-                            <tspan className={styles.cls_41} x="139.06" y="0">S</tspan>
+                            <tspan className={styles.cls_41} x="139.06" y="0">S</tspan> */}
                         </text>
                     </g>
                 </g>

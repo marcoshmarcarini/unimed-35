@@ -15,62 +15,62 @@ export default function MergeImage() {
         imageSrc: string,
         targetWidth: number,
         targetHeight: number
-      ): Promise<string> => {
+    ): Promise<string> => {
         return new Promise((resolve, reject) => {
-          const img = new Image()
-          img.onload = () => {
-            const canvas = document.createElement('canvas')
-            canvas.width = targetWidth
-            canvas.height = targetHeight
-      
-            const ctx = canvas.getContext('2d')
-            if (ctx) {
-              // Preenche o fundo com transparência, se necessário
-              ctx.clearRect(0, 0, canvas.width, canvas.height)
-      
-              // Calcula o fator de escala para manter a proporção
-              const scale = Math.min(
-                targetWidth / img.width,
-                targetHeight / img.height
-              )
-      
-              const newWidth = img.width * scale
-              const newHeight = img.height * scale
-      
-              // Centraliza a imagem no canvas
-              const offsetX = (targetWidth - newWidth) / 2
-              const offsetY = (targetHeight - newHeight) / 2
-      
-              ctx.drawImage(img, offsetX, offsetY, newWidth, newHeight)
-      
-              resolve(canvas.toDataURL('image/png'))
-            } else {
-              reject('Erro ao obter contexto do canvas.')
-            }
-          }
-          img.onerror = () => reject('Erro ao carregar a imagem.')
-          img.src = imageSrc
-        })
-      }
+            const img = new Image()
+            img.onload = () => {
+                const canvas = document.createElement('canvas')
+                canvas.width = targetWidth
+                canvas.height = targetHeight
 
-      const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+                const ctx = canvas.getContext('2d')
+                if (ctx) {
+                    // Preenche o fundo com transparência, se necessário
+                    ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+                    // Calcula o fator de escala para manter a proporção
+                    const scale = Math.min(
+                        targetWidth / img.width,
+                        targetHeight / img.height
+                    )
+
+                    const newWidth = img.width * scale
+                    const newHeight = img.height * scale
+
+                    // Centraliza a imagem no canvas
+                    const offsetX = (targetWidth - newWidth) / 2
+                    const offsetY = (targetHeight - newHeight) / 2
+
+                    ctx.drawImage(img, offsetX, offsetY, newWidth, newHeight)
+
+                    resolve(canvas.toDataURL('image/png'))
+                } else {
+                    reject('Erro ao obter contexto do canvas.')
+                }
+            }
+            img.onerror = () => reject('Erro ao carregar a imagem.')
+            img.src = imageSrc
+        })
+    }
+
+    const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0]
         if (file) {
-          const reader = new FileReader()
-          reader.onload = async () => {
-            const base64Image = reader.result as string
-      
-            try {
-              // Redimensiona a imagem para caber na moldura (ajuste as dimensões conforme necessário)
-              const resizedImage = await resizeImage(base64Image, 400, 500)
-              setUploadImage(resizedImage)
-            } catch (error) {
-              console.error('Erro ao redimensionar a imagem:', error)
+            const reader = new FileReader()
+            reader.onload = async () => {
+                const base64Image = reader.result as string
+
+                try {
+                    // Redimensiona a imagem para caber na moldura (ajuste as dimensões conforme necessário)
+                    const resizedImage = await resizeImage(base64Image, 400, 500)
+                    setUploadImage(resizedImage)
+                } catch (error) {
+                    console.error('Erro ao redimensionar a imagem:', error)
+                }
             }
-          }
-          reader.readAsDataURL(file)
+            reader.readAsDataURL(file)
         }
-      }
+    }
 
     const convertSVGToImage = (svgElement: SVGSVGElement): Promise<string> => {
         return new Promise((resolve, reject) => {
@@ -142,7 +142,7 @@ export default function MergeImage() {
 
             const result = await mergeImages(
                 [
-                    { src: uploadImage, x: 75, y: 280 },
+                    { src: uploadImage, x: 50, y: 280 },
                     { src: svgImagePath, x: 0, y: 0 },
                 ],
                 {
@@ -167,18 +167,6 @@ export default function MergeImage() {
             <p className={styles.part_1}>Insira o seu nome e o seu tempo consoco.</p>
             <div>
                 <Moldura nome={nome} anos={anos} />
-                {/* {svgImagePath && (
-                    <div>
-                        <p>Pré-visualização do SVG convertido:</p>
-                        <img
-                            src={svgImagePath}
-                            alt="SVG convertido"
-                            width={300}
-                            height={300}
-                        />
-                    </div>
-                )} */}
-
             </div>
             <div className={styles.inputs_area}>
                 <div>
