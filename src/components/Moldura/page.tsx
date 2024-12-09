@@ -123,8 +123,14 @@ export default function Moldura({ nome, anos }: MolduraProps) {
                         <text className={`${styles.cls_26} ${UnimedRegular.style}`} transform="translate(500.59 615.59)">
                             <tspan x="0" y="0">
                                 Sua contribuição é essencial <br />
+                            </tspan>
+                            <tspan>
                                 para o nosso sucesso.<br />
+                            </tspan>
+                            <tspan>
                                 Que venham muitos mais anos<br />
+                            </tspan>
+                            <tspan>
                                 de conquistas juntos!<br />
                             </tspan>
                             {/* <tspan className={styles.cls_15} x="55.67" y="0">c</tspan>
