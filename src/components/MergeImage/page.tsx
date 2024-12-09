@@ -220,7 +220,7 @@ export default function MergeImage() {
                 <input
                     id="fileUp"
                     type="file"
-                    accept="image/*"
+                    accept="image/*;capture=camera"
                     onChange={handleFileUpload}
                     className={styles.input_file}
                 />
