@@ -18,7 +18,6 @@ export default function Moldura({ nome, anos }: MolduraProps) {
         <div className={styles.moldura}>
             <svg
                 id="Camada_2"
-                /* dataName="Camada_2" */
                 viewBox="0 0 1080 1080"
                 className={styles.img_moldura}
             >
@@ -66,7 +65,6 @@ export default function Moldura({ nome, anos }: MolduraProps) {
                 </defs>
                 <g
                     id="Layer_1"
-                /* dataName="Layer_1" */
                 >
                     <path
                         className={styles.cls_47}
@@ -87,7 +85,6 @@ export default function Moldura({ nome, anos }: MolduraProps) {
                                 className={`${styles.cls_4} ${UnimedExtraBoldItalic.style} `}
                                 x="50"
                                 y="0"
-
                             >
                                 {anos}
                             </tspan>
@@ -155,13 +152,9 @@ export default function Moldura({ nome, anos }: MolduraProps) {
                     <g>
                         <text className={styles.cls_18} transform="translate(360.8 228.8)">
                             <tspan className={`${styles.cls_16} ${UnimedExtraBoldItalic.style}`} x="0" y="0">{anos}</tspan>
-                            {/* <tspan className={styles.cls_35} x="95.59" y="0">7</tspan> */}
                         </text>
                         <text className={`${styles.cls_8} ${UnimedBold.style}`} transform="translate(563.53 190.07)">
                             <tspan x="0" y="0">ANOS</tspan>
-                            {/* <tspan className={styles.cls_40} x="0" y="0">AN</tspan>
-                            <tspan className={styles.cls_32} x="91.69" y="0">O</tspan>
-                            <tspan className={styles.cls_41} x="139.06" y="0">S</tspan> */}
                         </text>
                     </g>
                 </g>
