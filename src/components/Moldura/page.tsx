@@ -1,9 +1,5 @@
 'use client'
-
 import styles from './Moldura.module.css'
-import { UnimedExtraBoldItalic, UnimedRegular, UnimedBlackItalic, UnimedBold } from '../Fonts/page'
-import Image from 'next/image'
-
 
 
 interface MolduraProps {
@@ -12,13 +8,6 @@ interface MolduraProps {
 }
 
 export default function Moldura({ nome, anos }: MolduraProps) {
-
-    /* 
-    const img_1 = ``
-
-    const img_2 = `` 
-    */
-
 
 
     return (
