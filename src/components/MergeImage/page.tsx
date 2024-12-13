@@ -148,7 +148,6 @@ export default function MergeImage() {
                 {
                     width: 1080,
                     height: 1080,
-                    /*  background: { r: 0, g: 0, b: 0, a: 0 }, */
                 }
             );
 

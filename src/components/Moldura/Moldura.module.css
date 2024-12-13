@@ -10,247 +10,222 @@
   display: none;
 }
 
-.cls_1 {
-  fill: url(#linear-gradient-2);
-}
-
-.cls_2 {
+.cls1 {
   letter-spacing: 0em;
 }
 
-.cls_3 {
-  letter-spacing: -0.06em;
-}
-
-.cls_4 {
-  letter-spacing: -0.06em;
-}
-
-.cls_5 {
-  letter-spacing: -0.04em;
-}
-
-.cls_6 {
-  letter-spacing: -0.05em;
-}
-
-.cls_7,
-.cls_8,
-.cls_9 {
-  fill: #fff;
-  letter-spacing: 25px;
-}
-
-.cls_10 {
-  letter-spacing: -0.07em;
-}
-
-.cls_11 {
-  letter-spacing: -0.08em;
-}
-
-.cls_12 {
+.cls2 {
+  font-size: 661px;
   letter-spacing: 0em;
 }
 
-.cls_13,
-.cls_14 {
+.cls2, .cls3, .cls4 {
   fill: none;
 }
 
-.cls_15 {
-  letter-spacing: 0em;
+.cls2, .cls5 {
+  font-family: UnimedSansExtraBoldItalic, 'Unimed Sans';
 }
 
-.cls_16 {
-  letter-spacing: -0.06em;
-}
-
-.cls_17 {
-  letter-spacing: -0.04em;
-}
-
-.cls_8 {
-  font-family: UnimedSans-Bold, 'Unimed Sans';
-  font-size: 31.39px;
-}
-
-.cls_8,
-.cls_18,
-.cls_14,
-.cls_9 {
+.cls2, .cls5, .cls6, .cls7 {
   font-weight: 700;
 }
 
-.cls_19 {
-  letter-spacing: -0.08em;
-}
-
-.cls_20 {
-  letter-spacing: -0.04em;
-}
-
-.cls_21 {
-  letter-spacing: -0.05em;
-}
-
-.cls_22 {
-  letter-spacing: -0.04em;
-}
-
-.cls_23 {
-  letter-spacing: -0.09em;
-}
-
-.cls_24,
-.cls_25 {
-  fill: #038c51;
-}
-
-.cls_25 tspan {
-  font-size: 2.4rem;
-}
-
-@media (max-width:500px) {
-  .cls_25 tspan {
-    font-size: 2.2rem;
-  }
-}
-
-.cls_18 {
-  font-size: 163.69px;
-}
-
-.cls_18,
-.cls_26 {
-  fill: #08484c;
-}
-
-.cls_18,
-.cls_14 {
-  font-family: UnimedSans-ExtraBoldItalic, 'Unimed Sans';
-}
-
-.cls_18,
-.cls_14,
-.cls_25 {
+.cls2, .cls5, .cls8 {
   font-style: italic;
 }
 
-.cls_27 {
-  letter-spacing: -0.06em;
-}
-
-.cls_26 {
-  font-family: UnimedSans-Regular, 'Unimed Sans';
-  font-size: 29.44px;
-}
-
-.cls_28 {
-  letter-spacing: 0em;
-}
-
-.cls_29 {
-  letter-spacing: -0.04em;
-}
-
-.cls_30 {
-  letter-spacing: -0.05em;
-}
-
-.cls_31 {
-  letter-spacing: -0.04em;
-}
-
-.cls_32 {
-  letter-spacing: 0.75em;
-}
-
-.cls_33 {
-  letter-spacing: 0em;
-}
-
-.cls_34 {
-  letter-spacing: 0em;
-}
-
-.cls_35 {
-  letter-spacing: -0.04em;
-}
-
-.cls_36 {
-  letter-spacing: 0em;
-}
-
-.cls_37 {
-  letter-spacing: -0.06em;
-}
-
-.cls_38 {
-  letter-spacing: -0.05em;
-}
-
-.cls_39 {
-  fill: #078d52;
-}
-
-.cls_40 {
-  letter-spacing: 0.76em;
-}
-
-.cls_41 {
-  letter-spacing: 0.76em;
-}
-
-.cls_42 {
-  letter-spacing: 0em;
-}
-
-.cls_43 {
-  letter-spacing: -0.04em;
-}
-
-.cls_14 {
-  font-size: 653.55px;
+.cls2, .cls4 {
   stroke: #08484c;
   stroke-miterlimit: 10;
 }
 
-.cls_44 {
+.cls9 {
   letter-spacing: 0em;
 }
 
-.cls_25 {
-  font-family: UnimedSans-BlackItalic, 'Unimed Sans';
-  font-size: 45.11px;
+.cls10 {
+  letter-spacing: 0em;
+}
+
+.cls11 {
+  letter-spacing: 0em;
+}
+
+.cls12 {
+  fill: url(#linear-gradient-2);
+}
+
+.cls13 {
+  letter-spacing: 0em;
+}
+
+.cls14, .cls8 {
+  fill: #038a51;
+}
+
+.cls15 {
+  fill: #adca4d;
+}
+
+.cls16 {
+  letter-spacing: 0em;
+}
+
+.cls17 {
+  letter-spacing: 0em;
+}
+
+.cls18, .cls6, .cls7 {
+  fill: #fff;
+}
+
+.cls19 {
+  letter-spacing: 0em;
+}
+
+.cls20 {
+  letter-spacing: 0em;
+}
+
+.cls21 {
+  letter-spacing: 0em;
+}
+
+.cls22 {
+  letter-spacing: 0em;
+}
+
+.cls5 {
+  font-size: 163.7px;
+  letter-spacing: 0em;
+}
+
+.cls5, .cls23 {
+  fill: #08484c;
+}
+
+.cls6 {
+  font-family: UnimedSansBold, 'Unimed Sans';
+  font-size: 31.4px;
+}
+
+.cls24 {
+  letter-spacing: 0em;
+}
+
+.cls25 {
+  letter-spacing: 0em;
+}
+
+.cls26 {
+  letter-spacing: 0em;
+}
+
+.cls27 {
+  letter-spacing: 0em;
+}
+
+.cls28 {
+  letter-spacing: 0em;
+}
+
+.cls29 {
+  letter-spacing: 0em;
+}
+
+.cls8 {
+  font-family: UnimedSansBlackItalic, 'Unimed Sans';
+  font-size: 51.3px;
   font-weight: 800;
 }
 
-.cls_45 {
-  letter-spacing: -0.13em;
+.cls30 {
+  letter-spacing: 0em;
 }
 
-.cls_46 {
-  letter-spacing: -0.06em;
+.cls31 {
+  letter-spacing: 0em;
 }
 
-.cls_47 {
+.cls32 {
+  letter-spacing: 0em;
+}
+
+.cls33 {
+  letter-spacing: 0em;
+}
+
+.cls34 {
+  letter-spacing: 0em;
+}
+
+.cls35 {
+  letter-spacing: .8em;
+}
+
+.cls36 {
+  letter-spacing: 0em;
+}
+
+.cls37 {
+  fill: #078b52;
+}
+
+.cls38 {
+  letter-spacing: 0em;
+}
+
+.cls39 {
+  letter-spacing: .8em;
+}
+
+.cls40 {
+  letter-spacing: .8em;
+}
+
+.cls41 {
+  letter-spacing: 0em;
+}
+
+.cls23 {
+  font-family: UnimedSansRegular, 'Unimed Sans';
+  font-size: 33.5px;
+}
+
+.cls42 {
+  letter-spacing: .1em;
+}
+
+.cls43 {
   fill: url(#linear-gradient);
 }
 
-.cls_48 {
-  clip-path: url(#clippath);
+.cls7 {
+  font-family: UnimedSansExtraBold, 'Unimed Sans';
+  font-size: 32.7px;
 }
 
-.cls_49 {
-  fill: #afcc4d;
+.image1{
+  transform: translate(543, 478);
 }
 
+
+
+/* .cls_7,
+.cls_8,
 .cls_9 {
-  font-family: UnimedSans-ExtraBold, 'Unimed Sans';
-  font-size: 32.74px;
+  fill: #fff;
+  letter-spacing: 25px;
+} */
+
+/* .cls_25 tspan {
+  font-size: 2.5rem;
 }
 
-.cls_50 {
-  letter-spacing: 0em;
-}
+@media (maxwidth:500px) {
+  .cls_25 tspan {
+    font-size: 2.2rem;
+  }
+} */
+
