@@ -5,6 +5,7 @@ import styles from "./MergeImage.module.css"
 
 export default function MergeImage() {
     const [nome, setNome] = useState('')
+    const [sobrenome, setSobrenome] = useState('')
     const [anos, setAnos] = useState(0)
     const [uploadImage, setUploadImage] = useState<string | null>(null)
     const [mergedImage, setMergedImage] = useState<string | null>(null)
@@ -62,7 +63,7 @@ export default function MergeImage() {
 
                 try {
                     // Redimensiona a imagem para caber na moldura (ajuste as dimensões conforme necessário)
-                    const resizedImage = await resizeImage(base64Image, 400, 500)
+                    const resizedImage = await resizeImage(base64Image, 700, 1150)
                     setUploadImage(resizedImage)
                 } catch (error) {
                     console.error('Erro ao redimensionar a imagem:', error)
@@ -97,7 +98,7 @@ export default function MergeImage() {
             img.onload = () => {
                 const canvas = document.createElement('canvas')
                 canvas.width = svgElement.clientWidth || 1080
-                canvas.height = svgElement.clientHeight || 1080
+                canvas.height = svgElement.clientHeight || 1350
                 const ctx = canvas.getContext('2d')
                 if (ctx) {
                     ctx.drawImage(img, 0, 0)
@@ -142,12 +143,12 @@ export default function MergeImage() {
 
             const result = await mergeImages(
                 [
-                    { src: uploadImage, x: 50, y: 280 },
+                    { src: uploadImage, x:  440, y: -120 },
                     { src: svgImagePath, x: 0, y: 0 },
                 ],
                 {
                     width: 1080,
-                    height: 1080,
+                    height: 1350,
                 }
             );
 
@@ -165,7 +166,7 @@ export default function MergeImage() {
             </p>
             <p className={styles.part_1}>Insira o seu nome e o seu tempo consoco.</p>
             <div>
-                <Moldura nome={nome} anos={anos} />
+                <Moldura nome={nome} sobrenome={sobrenome} anos={anos} />
             </div>
             <div className={styles.inputs_area}>
                 <div>
@@ -177,12 +178,21 @@ export default function MergeImage() {
                         className={styles.input_nome}
                     />
                 </div>
+                <div>
+                    <input
+                        type="text"
+                        value={sobrenome}
+                        onChange={(e) => setSobrenome(e.target.value)}
+                        placeholder="Digite seu sobrenome"
+                        className={styles.input_nome}
+                    />
+                </div>
                 <div className={styles.slider_area}>
                     <p className={styles.question}>
                         Há quantos anos está conosco?
                     </p>
                     <p className={styles.answer}>
-                        {anos} anos
+                        {anos > 1 ? `${anos} anos` : `${anos} ano`} 
                     </p>
                     <input
                         className={styles.slider}
