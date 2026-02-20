@@ -199,7 +199,7 @@ export default function MergeImage() {
                         step={1}
                         type="range"
                         min="0"
-                        max="35"
+                        max="36"
                         value={anos}
                         onChange={(e) => setAnos(parseInt(e.target.value))}
                     />

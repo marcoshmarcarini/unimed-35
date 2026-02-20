@@ -74,7 +74,7 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
             <text
               transform="translate(49.8 536.1)"
               fill="#004e4c"
-              fontFamily="UnimedSans-BoldItalic, 'Unimed Sans'"
+              fontFamily="'Unimed Sans', sans-serif"
               fontSize="90"
               fontStyle="italic"
               fontWeight="700"
@@ -86,8 +86,10 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
             <text
               transform="translate(39.8 450.2)"
               fill="#004e4c"
-              fontFamily="UnimedSans-Book, 'Unimed Sans'"
+              fontFamily="'Unimed Sans', sans-serif"
               fontSize="60"
+              fontStyle="regular"
+              fontWeight="400"
             >
               <tspan x="0" y="0">
                 comemorando
@@ -96,8 +98,10 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
             <text
               transform="translate(88.4 595.9)"
               fill="#004e4c"
-              fontFamily="UnimedSans-Book, 'Unimed Sans'"
+              fontFamily="'Unimed Sans', sans-serif"
               fontSize="60"
+              fontStyle="regular"
+              fontWeight="400"
             >
               <tspan x="0" y="0">
                 de Unimed
@@ -107,8 +111,9 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
               <text
                 transform="translate(73.5 1069.5) scale(.9 1)"
                 fill="#004e4c"
-                fontFamily="UnimedSans-ExtraBold, 'Unimed Sans'"
+                fontFamily="'Unimed Sans', sans-serif"
                 fontSize="207.4"
+                fontStyle="ExtraBook"
                 fontWeight="700"
                 letterSpacing="0em"
               >
@@ -119,7 +124,7 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
               <text
                 transform="translate(78.7 939.1) scale(1 1)"
                 fill="#004e4c"
-                fontFamily="UnimedSans-Regular, 'Unimed Sans'"
+                fontFamily="'Unimed Sans', sans-serif"
                 fontSize="90.7"
                 letterSpacing="0em"
               >
@@ -134,14 +139,14 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
                 letterSpacing="0em"
               >
                 <tspan
-                  fontFamily="UnimedSans-Bold, 'Unimed Sans'"
+                  fontFamily="'Unimed Sans', sans-serif"
                   fontWeight="700"
                 >
                   <tspan x="0" y="0">
                     Juntos,
                   </tspan>
                 </tspan>
-                <tspan fontFamily="UnimedSans-Regular, 'Unimed Sans'">
+                <tspan fontFamily="'Unimed Sans', sans-serif">
                   <tspan x="0" y="81.5">
                     fazemos
                   </tspan>
@@ -152,7 +157,7 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
             <text
               transform="translate(59.1 252.7)"
               fill="#fff"
-              fontFamily="UnimedSans-Bold, 'Unimed Sans'"
+              fontFamily="'Unimed Sans', sans-serif"
               fontSize="75"
               fontWeight="700"
             >
