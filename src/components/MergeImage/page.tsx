@@ -118,7 +118,6 @@ export default function MergeImage() {
             console.log('Erro: SVG não encontrado.')
             return
         }
-
         try {
             const svgPath = await convertSVGToImage(svgElement)
             setSvgImagePath(svgPath)
@@ -132,12 +131,10 @@ export default function MergeImage() {
 
     const handleMergeImage = async (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
-
         if (!uploadImage || !svgImagePath) {
             console.log('Por favor, carregue uma imagem e converta o SVG antes de combinar.')
             return;
         }
-
         try {
             const mergeImages = (await import('merge-images')).default
 
