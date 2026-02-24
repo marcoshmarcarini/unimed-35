@@ -72,7 +72,7 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
               fill="url(#Gradiente_sem_nome_20)"
             />
             <text
-              transform="translate(49.8 536.1)"
+              transform="translate(80 536.1)"
               fill="#004e4c"
               fontFamily="UnimedSans-BoldItalic, 'Unimed Sans'"
               fontSize="90"
@@ -153,14 +153,13 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
               transform="translate(59.1 252.7)"
               fill="#fff"
               fontFamily="UnimedSans-Bold, 'Unimed Sans'"
-              fontSize="75"
               fontWeight="700"
             >
-              <tspan x="0" y="0">
+              <tspan x="0" y="0" fontSize={nome.length > 10 ? "45" : "50"}>
                 {nome}
               </tspan>
               
-              <tspan x="17.7" y="76">
+              <tspan x="17.7" y="76" fontSize={sobrenome.length > 10 ? "45" : "50"}>
                 {sobrenome}
               </tspan>
             
