@@ -159,7 +159,7 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
                 {nome}
               </tspan>
               
-              <tspan x="17.7" y="76" fontSize={sobrenome.length > 10 ? "45" : "50"}>
+              <tspan x="0" y="76" fontSize={sobrenome.length > 10 ? "45" : "50"}>
                 {sobrenome}
               </tspan>
             
