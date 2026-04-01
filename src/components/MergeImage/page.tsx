@@ -254,7 +254,7 @@ export default function MergeImage() {
       </div>
       {mergedImage && (
         <div className={styles.result}>
-          <p className={styles.result_title}>Imagem combinada:</p>
+          <p className={`${styles.result_title}`}>Imagem combinada:</p>
           <img
             src={mergedImage}
             alt="Imagem combinada"
