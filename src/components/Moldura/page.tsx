@@ -1,5 +1,5 @@
 "use client";
-import { UnimedBookCondensed, UnimedExtraBoldCondensed } from "../Fonts/page";
+import { UnimedBookCondensed } from "../Fonts/page";
 import styles from "./Moldura.module.css";
 
 interface MolduraProps {
