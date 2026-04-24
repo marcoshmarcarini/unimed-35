@@ -34,6 +34,32 @@
   }
 } */
 
+@font-face {
+  font-family: 'UnimedSans2020-Regular'; /* O nome exato que o SVG pede */
+  src: url('/fonts/UnimedSans2020/UnimedSans-2020-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UNIMEDSANS2020-BLK'; /* O nome exato que o SVG pede */
+  src: url('/fonts/UnimedSans2020/UNIMEDSANS2020-BLK.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UNIMEDSANS2020-BLKIT'; /* O nome exato que o SVG pede */
+  src: url('/fonts/UnimedSans2020/UNIMEDSANS2020-BLKIT.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
 body {
   color: var(--foreground);
   background: linear-gradient(90deg, var(--orange-1) 0%, var(--orange-4) 100%)
