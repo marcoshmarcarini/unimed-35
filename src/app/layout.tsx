@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { UnimedSans } from "@/components/Fonts/page"
 import "./globals.css"
 
 
@@ -16,9 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body
-        className={`${UnimedSans.className}  antialiased`}
-      >
+      <body>
       {children}
       </body>
     </html>

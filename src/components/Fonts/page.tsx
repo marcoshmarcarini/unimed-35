@@ -1,4 +1,4 @@
-import localFont from "next/font/local";
+/* import localFont from "next/font/local";
 
 export const UnimedSans = localFont({
   src: [
@@ -102,3 +102,4 @@ export const UnimedBookCondensed = localFont({
 export const UnimedExtraBoldCondensed = localFont({
   src: "../../app/fonts/UnimedSans2020/UNIMEDSANS2020-XBCD.woff",
 });
+ */
