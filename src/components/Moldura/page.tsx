@@ -16,7 +16,147 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
         version="1.1"
         viewBox="0 0 1080 1350"
       >
-        <defs></defs>
+        <defs>
+          {`
+                .st0 {
+                  fill: #eff8eb;
+                }
+
+                .st1 {
+                  fill: #e4f4de;
+                }
+
+                .st2,
+                .st3 {
+                  font-family: UnimedSans2020-Regular, sans-serif;
+                }
+
+                .st4 {
+                  fill: #b2dfa1;
+                }
+
+                .st3,
+                .st5 {
+                  font-size: 90.7px;
+                  letter-spacing: 0em;
+                }
+
+                .st3,
+                .st5,
+                .st6,
+                .st7,
+                .st8 {
+                  fill: #004e4c;
+                }
+
+                .st9,
+                .st10 {
+                  fill: #fff;
+                }
+
+                .st11 {
+                  fill: none;
+                  stroke: #cbeac0;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                }
+
+                .st12 {
+                  fill: #008c50;
+                }
+
+                .st13 {
+                  fill: #008c50;
+                }
+
+                .st14 {
+                  fill: #a6da93;
+                }
+
+                .st15 {
+                  fill: #daf0d3;
+                }
+
+                .st16 {
+                  fill: #9ad685;
+                }
+
+                .st17,
+                .st6,
+                .st10,
+                .st7 {
+                  font-weight: 700;
+                }
+
+                .st17,
+                .st10 {
+                  font-family: UNIMEDSANS2020-BD, sans-serif;
+                }
+
+                .st18 {
+                  fill: #8ed176;
+                }
+
+                .st6 {
+                  font-family: UNIMEDSANS2020-EXTRABOLD, sans-serif;
+                  font-size: 207.4px;
+                  letter-spacing: 0em;
+                }
+
+                .st19 {
+                  fill: #bee4b1;
+                }
+
+                .st20 {
+                  fill: #a0d98c;
+                }
+
+                .st10 {
+                  font-size: 75px;
+                }
+
+                .st21 {
+                  fill: #bae3ac;
+                }
+
+                .st22 {
+                  fill: #f5fbf3;
+                }
+
+                .st7 {
+                  font-family: UNIMEDSANS2020-BLK, 'Unimed Sans - 2020';
+                  font-size: 90px;
+                  font-style: italic;
+                }
+
+                .st23 {
+                  fill: #d4edcb;
+                }
+
+                .st8 {
+                  font-family: UNIMEDSANS2020-BKCD, sans-serif;
+                  font-size: 60px;
+                }
+
+                .st24 {
+                  fill: #c5e7b9;
+                }
+
+                .st25 {
+                  fill: #cbeac0;
+                }
+
+                .st26 {
+                  fill: #b7e1a8;
+                }
+
+                .st27 {
+                  fill: #addd9c;
+                }
+
+          `}
+        </defs>
+        
         <g>
           <path
             className="st24"
@@ -1730,15 +1870,18 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
           <g transform="translate(-10 0)">
             <text className="st7" transform="translate(75 537.1)">
               <tspan x="0" y="0">
-                {anos > 1 ? `${anos} anos` : `${anos} ano`}
+                {anos > 1 ? `${anos} ANOS` : `${anos} ANO`}
               </tspan>
             </text>
-            <text className={`${styles.st8}`} transform="translate(76.2 451.2)">
+            <text className="st8" transform="translate(76.2 451.2)">
               <tspan x="0" y="0">
                 comemorando
               </tspan>
             </text>
-            <text className={`${styles.st8}`} transform="translate(115.4 596.9)">
+            <text
+              className="st8"
+              transform="translate(115.4 596.9)"
+            >
               <tspan x="0" y="0">
                 de Unimed
               </tspan>
