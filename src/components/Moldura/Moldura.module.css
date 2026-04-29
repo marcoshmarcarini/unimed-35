@@ -331,7 +331,7 @@
 
 .st2,
 .st3 {
-  font-family: UnimedSans2020-Regular, 'Unimed Sans - 2020';
+  font-family: UnimedSans-Regular, sans-serif;
 }
 
 .st4 {
@@ -393,7 +393,8 @@
 
 .st17,
 .st10 {
-  font-family: UNIMEDSANS2020-BD, 'Unimed Sans - 2020';
+  font-family: UnimedSans-Bold, sans-serif;
+
 }
 
 .st18 {
@@ -401,7 +402,7 @@
 }
 
 .st6 {
-  font-family: UNIMEDSANS2020-EXTRABOLD, 'Unimed Sans - 2020';
+  font-family: UnimedSans-Bold, sans-serif;
   font-size: 207.4px;
   letter-spacing: 0em;
 }
@@ -427,7 +428,7 @@
 }
 
 .st7 {
-  font-family: UNIMEDSANS2020-BLK, 'Unimed Sans - 2020';
+  font-family: UnimedSans-SemiBoldItalic, sans-serif;
   font-size: 90px;
   font-style: italic;
 }
@@ -437,7 +438,7 @@
 }
 
 .st8 {
-  font-family: UNIMEDSANS2020-BKCD, 'Unimed Sans - 2020';
+  font-family: UnimedSans-Light, sans-serif;
   font-size: 60px;
 }
 
@@ -455,12 +456,4 @@
 
 .st27 {
   fill: #addd9c;
-}
-
-
-.st28 {
-  /* fill: none;
-  stroke: #004e4c;
-  stroke-miterlimit: 10;
-  stroke-width: 6px; */
 }

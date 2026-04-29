@@ -85,13 +85,19 @@ export default function MergeImage() {
     });
   };
 
-  const convertSVGToImage = async (svgElement: SVGSVGElement): Promise<string> => {
+  const convertSVGToImage = async (
+    svgElement: SVGSVGElement,
+  ): Promise<string> => {
     const svgClone = svgElement.cloneNode(true) as SVGSVGElement;
 
     try {
       // 1. Buscamos as fontes
-      const blackBase64 = await fetchFontAsBase64('/fonts/UnimedSans2020/UNIMEDSANS2020-BLK.woff');
-      const regularBase64 = await fetchFontAsBase64('/fonts/UnimedSans2020/UNIMEDSANS-2020-Regular.woff');
+      const blackBase64 = await fetchFontAsBase64(
+        "/fonts/UnimedSans2020/UNIMEDSANS2020-BLK.woff",
+      );
+      const regularBase64 = await fetchFontAsBase64(
+        "/fonts/UnimedSans2020/UNIMEDSANS-2020-Regular.woff",
+      );
 
       // 2. Criamos a tag style
       const style = document.createElement("style");
@@ -172,24 +178,31 @@ export default function MergeImage() {
 
       return new Promise((resolve, reject) => {
         const img = new Image();
-        img.onload = () => {
-          const canvas = document.createElement("canvas");
-          canvas.width = svgElement.clientWidth || 1080;
-          canvas.height = svgElement.clientHeight || 1350;
-          const ctx = canvas.getContext("2d");
-          if (ctx) {
-            // O Canvas precisa manter o fundo transparente para a foto aparecer atrás
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.drawImage(img, 0, 0);
-            resolve(canvas.toDataURL("image/png"));
-          } else {
-            reject("Erro ao criar o contexto do canvas.");
-          }
-        };
-        img.onerror = () => reject("Erro ao carregar SVG como imagem.");
-        img.src = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgString)}`;
-      });
 
+        img.onload = () => {
+          // SEGREDO 1: O atraso de 150ms para o iPhone "respirar" e renderizar a fonte
+          setTimeout(() => {
+            const canvas = document.createElement("canvas");
+            canvas.width = svgElement.clientWidth || 1080;
+            canvas.height = svgElement.clientHeight || 1350;
+            const ctx = canvas.getContext("2d");
+
+            if (ctx) {
+              ctx.clearRect(0, 0, canvas.width, canvas.height);
+              ctx.drawImage(img, 0, 0);
+              resolve(canvas.toDataURL("image/png"));
+            } else {
+              reject("Erro ao criar o contexto do canvas.");
+            }
+          }, 150);
+        };
+
+        img.onerror = () => reject("Erro ao carregar SVG como imagem.");
+
+        // SEGREDO 2: Empacotar o SVG em Base64 puro para o iOS não se perder nos caracteres
+        const svgBase64 = btoa(unescape(encodeURIComponent(svgString)));
+        img.src = `data:image/svg+xml;base64,${svgBase64}`;
+      });
     } catch (error) {
       console.error("Erro ao converter as fontes dinamicamente:", error);
       throw error;

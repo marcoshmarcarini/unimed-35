@@ -28,7 +28,7 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
 
                 .st2,
                 .st3 {
-                  font-family: UnimedSans2020-Regular, sans-serif;
+                  font-family: UnimedSans-Regular, sans-serif;
                 }
 
                 .st4 {
@@ -90,7 +90,8 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
 
                 .st17,
                 .st10 {
-                  font-family: UNIMEDSANS2020-BD, sans-serif;
+                  font-family: UnimedSans-Bold, sans-serif;
+                 
                 }
 
                 .st18 {
@@ -98,7 +99,7 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
                 }
 
                 .st6 {
-                  font-family: UNIMEDSANS2020-EXTRABOLD, sans-serif;
+                  font-family: UnimedSans-Bold, sans-serif;
                   font-size: 207.4px;
                   letter-spacing: 0em;
                 }
@@ -124,7 +125,7 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
                 }
 
                 .st7 {
-                  font-family: UNIMEDSANS2020-BLK, 'Unimed Sans - 2020';
+                  font-family: UnimedSans-SemiBoldItalic, sans-serif;
                   font-size: 90px;
                   font-style: italic;
                 }
@@ -134,7 +135,7 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
                 }
 
                 .st8 {
-                  font-family: UNIMEDSANS2020-BKCD, sans-serif;
+                  font-family: UnimedSans-Light, sans-serif;
                   font-size: 60px;
                 }
 
@@ -1916,11 +1917,11 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
             </text>
           </g>
           <text className="st10" transform="translate(50 253.7)">
-            <tspan x="0" y="0" fontSize={nome.length > 10 ? "50" : "70"}>
+            <tspan x="0" y="0" fontSize={nome.length > 10 ? "50" : "70"} >
               {nome}
             </tspan>
 
-            <tspan x="0" y="76" fontSize={sobrenome.length > 10 ? "50" : "70"}>
+            <tspan x="0" y="76" fontSize={sobrenome.length > 10 ? "50" : "70"} >
               {sobrenome}
             </tspan>
           </text>
