@@ -92,11 +92,17 @@ export default function MergeImage() {
 
     try {
       // 1. Buscamos as fontes
-      const blackBase64 = await fetchFontAsBase64(
-        "/fonts/UnimedSans2020/UNIMEDSANS2020-BLK.woff",
-      );
       const regularBase64 = await fetchFontAsBase64(
         "/fonts/UnimedSans2020/UNIMEDSANS-2020-Regular.woff",
+      );
+      const lightBase64 = await fetchFontAsBase64(
+        "/fonts/UnimedSans2020/UNIMEDSANS2020-BKCD.woff",
+      );
+      const boldBase64 = await fetchFontAsBase64(
+        "/fonts/UnimedSans2020/UNIMEDSANS2020-BD.woff",
+      );
+      const semiBoldItalicBase64 = await fetchFontAsBase64(
+        "/fonts/UnimedSans2020/UNIMEDSANS2020-BDIT.woff",
       );
 
       // 2. Criamos a tag style
@@ -106,22 +112,36 @@ export default function MergeImage() {
       // 3. MÁGICA FINAL: Juntamos as FONTES e TODAS AS SUAS CORES em um lugar só!
       const cssCompleto = `
         @font-face {
-          font-family: 'UNIMEDSANS2020-BLK';
-          src: url('${blackBase64}') format('woff');
+          font-family: 'UniBold';
+          src: url('${boldBase64}') format('woff');
           font-weight: 900;
           font-style: normal;
         }
         @font-face {
-          font-family: 'UnimedSans-2020-Regular';
+          font-family: 'UniRegular';
           src: url('${regularBase64}') format('woff');
           font-weight: 400;
+          font-style: normal;
+        }
+
+        @font-face {
+          font-family: 'UniSemiBoldItalic';
+          src: url('${semiBoldItalicBase64}') format('woff');
+          font-weight: 600;
+          font-style: italic;
+        }
+
+        @font-face {
+          font-family: 'UniLight';
+          src: url('${lightBase64}') format('woff');
+          font-weight: 300;
           font-style: normal;
         }
 
         /* Classes de Cor e Preenchimento extraídas do seu CSS */
         .st0 { fill: #eff8eb; }
         .st1 { fill: #e4f4de; }
-        .st2, .st3 { font-family: 'UnimedSans2020-Regular', 'Unimed Sans - 2020'; }
+        .st2, .st3 { font-family: 'UniRegular'; }
         .st4 { fill: #b2dfa1; }
         .st3, .st5 { font-size: 90.7px; letter-spacing: 0em; }
         .st3, .st5, .st6, .st7, .st8 { fill: #004e4c; }
@@ -133,42 +153,21 @@ export default function MergeImage() {
         .st15 { fill: #daf0d3; }
         .st16 { fill: #9ad685; }
         .st17, .st6, .st10, .st7 { font-weight: 700; }
-        .st17, .st10 { font-family: 'UNIMEDSANS2020-BD', 'Unimed Sans - 2020'; }
+        .st17, .st10 { font-family: 'UniBold'; }
         .st18 { fill: #8ed176; }
-        .st6 { font-family: 'UNIMEDSANS2020-EXTRABOLD', 'Unimed Sans - 2020'; font-size: 207.4px; letter-spacing: 0em; }
+        .st6 { font-family: 'UniBold'; font-size: 207.4px; letter-spacing: 0em; }
         .st19 { fill: #bee4b1; }
         .st20 { fill: #a0d98c; }
         .st10 { font-size: 75px; }
         .st21 { fill: #bae3ac; }
         .st22 { fill: #f5fbf3; }
-        .st7 { font-family: 'UNIMEDSANS2020-BLK', 'Unimed Sans - 2020'; font-size: 90px; font-style: italic; }
+        .st7 { font-family: 'UniSemiBoldItalic'; font-size: 90px; font-style: italic; }
         .st23 { fill: #d4edcb; }
-        .st8 { font-family: 'UNIMEDSANS2020-BKCD', 'Unimed Sans - 2020'; font-size: 60px; }
+        .st8 { font-family: 'UniLight'; font-size: 60px; }
         .st24 { fill: #c5e7b9; }
         .st25 { fill: #cbeac0; }
         .st26 { fill: #b7e1a8; }
         .st27 { fill: #addd9c; }
-        
-        /* Classes extras (cls) */
-        .cls1 { letter-spacing: 0em; }
-        .cls2 { font-size: 661px; letter-spacing: 0em; }
-        .cls2, .cls3, .cls4 { fill: none; }
-        .cls2, .cls5 { font-family: 'UnimedSansExtraBoldItalic', 'Unimed Sans'; }
-        .cls2, .cls5, .cls6, .cls7 { font-weight: 700; }
-        .cls2, .cls5, .cls8 { font-style: italic; }
-        .cls2, .cls4 { stroke: #08484c; stroke-miterlimit: 10; }
-        .cls5 { font-size: 163.7px; letter-spacing: 0em; }
-        .cls5, .cls23 { fill: #08484c; }
-        .cls6 { font-family: 'UnimedSansBold', 'Unimed Sans'; font-size: 31.4px; }
-        .cls8 { font-family: 'UnimedSansBlackItalic', 'Unimed Sans'; font-size: 51.3px; font-weight: 800; }
-        .cls12 { fill: url(#linear-gradient-2); }
-        .cls14, .cls8 { fill: #038a51; }
-        .cls15 { fill: #adca4d; }
-        .cls18, .cls6, .cls7 { fill: #fff; }
-        .cls23 { font-family: 'UnimedSansRegular', 'Unimed Sans'; font-size: 33.5px; }
-        .cls37 { fill: #078b52; }
-        .cls43 { fill: url(#linear-gradient); }
-        .cls7 { font-family: 'UnimedSansExtraBold', 'Unimed Sans'; font-size: 32.7px; }
       `;
 
       style.appendChild(document.createTextNode(cssCompleto));
