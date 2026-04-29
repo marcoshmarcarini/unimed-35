@@ -35,7 +35,7 @@
 } */
 
 /* Fontes Unimed Sans */
-@font-face {
+/* @font-face {
   font-family: 'UnimedSans-Regular';
   src: url('/fonts/UnimedSans/UnimedSans-Regular.otf') format('opentype');
   font-display: swap;
@@ -57,7 +57,7 @@
   font-family: 'UnimedSans-SemiBoldItalic';
   src: url('/fonts/UnimedSans/UnimedSans-SemiBoldItalic.otf') format('opentype');
   font-display: swap;
-}
+} */
 
 
 

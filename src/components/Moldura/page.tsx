@@ -1,4 +1,5 @@
 "use client";
+import { unimedSansRegular, unimedSansLight, unimedSansBold, unimedSansSemiBoldItalic } from "@/app/layout";
 import styles from "./Moldura.module.css";
 
 interface MolduraProps {
@@ -1869,18 +1870,18 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
         </g>
         <g>
           <g transform="translate(-10 0)">
-            <text className="st7" transform="translate(75 537.1)">
+            <text className={`st7 ${unimedSansSemiBoldItalic.variable}`} transform="translate(75 537.1)">
               <tspan x="0" y="0">
                 {anos > 1 ? `${anos} ANOS` : `${anos} ANO`}
               </tspan>
             </text>
-            <text className="st8" transform="translate(76.2 451.2)">
+            <text className={`st8 ${unimedSansSemiBoldItalic.variable}`} transform="translate(76.2 451.2)">
               <tspan x="0" y="0">
                 comemorando
               </tspan>
             </text>
             <text
-              className="st8"
+              className={`st8 ${unimedSansSemiBoldItalic.variable}`}
               transform="translate(115.4 596.9)"
             >
               <tspan x="0" y="0">
@@ -1891,32 +1892,32 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
 
           <g>
             <text
-              className="st6"
+              className={`st6 ${unimedSansBold.variable}`}
               transform="translate(76.9 1070.5) scale(.9 1)"
             >
               <tspan x="0" y="0">
                 melhor.
               </tspan>
             </text>
-            <text className="st3" transform="translate(82.1 940.1) scale(1 1)">
+            <text className={`st3 ${unimedSansRegular.variable}`} transform="translate(82.1 940.1) scale(1 1)">
               <tspan x="0" y="0">
                 a vida
               </tspan>
             </text>
-            <text className="st5" transform="translate(85.5 773.6) scale(1 1)">
+            <text className={`st5 ${unimedSansBold.variable}`} transform="translate(85.5 773.6) scale(1 1)">
               <tspan className="st17">
                 <tspan x="0" y="0">
                   Juntos,
                 </tspan>
               </tspan>
-              <tspan className="st2">
+              <tspan className={`st2 ${unimedSansRegular.variable}`}>
                 <tspan x="0" y="81.5">
                   fazemos
                 </tspan>
               </tspan>
             </text>
           </g>
-          <text className="st10" transform="translate(50 253.7)">
+          <text className={`st10 ${unimedSansBold.variable}`} transform="translate(50 253.7)">
             <tspan x="0" y="0" fontSize={nome.length > 10 ? "50" : "70"} >
               {nome}
             </tspan>

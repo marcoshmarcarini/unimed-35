@@ -1,72 +1,4 @@
-@font-face {
-  font-family: 'UNIMEDSANS2020-LGCD';
-  /* O nome exato que o SVG pede */
-  src: url('/fonts/UnimedSans2020/UNIMEDSANS2020-LGCD.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: 'UnimedSans2020-Regular';
-  /* O nome exato que o SVG pede */
-  src: url('/fonts/UnimedSans2020/UnimedSans-2020-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'UNIMEDSANS2020-BLK';
-  /* O nome exato que o SVG pede */
-  src: url('/fonts/UnimedSans2020/UNIMEDSANS2020-BLK.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'UNIMEDSANS2020-BLKIT';
-  /* O nome exato que o SVG pede */
-  src: url('/fonts/UnimedSans2020/UNIMEDSANS2020-BLKIT.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-
-@font-face {
-  font-family: 'UNIMEDSANS2020-BKCD';
-  /* O nome exato que o SVG pede */
-  src: url('/fonts/UnimedSans2020/UNIMEDSANS2020-BKCD.ttf') format('ttf');
-}
-
-@font-face {
-  font-family: 'UNIMEDSANS2020-BD';
-  /* O nome exato que o SVG pede */
-  src: url('/fonts/UnimedSans2020/UNIMEDSANS2020-BD.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'UNIMEDSANS2020-BDIT';
-  /* O nome exato que o SVG pede */
-  src: url('/fonts/UnimedSans2020/UNIMEDSANS2020-BDIT.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'UNIMEDSANS2020-EXTRABOLD';
-  /* O nome exato que o SVG pede */
-  src: url('/fonts/UnimedSans2020/UNIMEDSANS-2020-EXTRABOLD.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 .moldura {
   display: flex;
@@ -80,7 +12,7 @@
   display: none;
 }
 
-.cls1 {
+/* .cls1 {
   letter-spacing: 0em;
 }
 
@@ -287,7 +219,7 @@
 .cls7 {
   font-family: UnimedSansExtraBold, 'Unimed Sans';
   font-size: 32.7px;
-}
+} */
 
 .image1 {
   transform: translate(543, 478);
@@ -321,7 +253,7 @@
 
 /* CSS da Moldura */
 
-.st0 {
+/* .st0 {
   fill: #eff8eb;
 }
 
@@ -456,4 +388,4 @@
 
 .st27 {
   fill: #addd9c;
-}
+} */
