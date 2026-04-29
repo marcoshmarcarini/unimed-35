@@ -1,5 +1,5 @@
 "use client";
-import { unimedSansRegular, unimedSansLight, unimedSansBold, unimedSansSemiBoldItalic } from "@/app/layout";
+import { unimedSansRegular, unimedSansLight, unimedSansBold, unimedSansSemiBoldItalic } from "@/components/fonts/page";
 import styles from "./Moldura.module.css";
 
 interface MolduraProps {
@@ -1881,7 +1881,7 @@ export default function Moldura({ nome, sobrenome, anos }: MolduraProps) {
               </tspan>
             </text>
             <text
-              className={`st8 ${unimedSansSemiBoldItalic.variable}`}
+              className={`st8 ${unimedSansLight.variable}`}
               transform="translate(115.4 596.9)"
             >
               <tspan x="0" y="0">
