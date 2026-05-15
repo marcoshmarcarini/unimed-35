@@ -95,7 +95,7 @@ export default function MergeImage() {
       const regularBase64 = await fetchFontAsBase64(
         "/fonts/UnimedSans2020/UNIMEDSANS-2020-Regular.woff",
       );
-      const lightBase64 = await fetchFontAsBase64(
+      const bookBase64 = await fetchFontAsBase64(
         "/fonts/UnimedSans2020/UNIMEDSANS2020-BKCD.woff",
       );
       const boldBase64 = await fetchFontAsBase64(
@@ -132,42 +132,32 @@ export default function MergeImage() {
         }
 
         @font-face {
-          font-family: 'UniLight';
-          src: url('${lightBase64}') format('woff');
+          font-family: 'UniBook';
+          src: url('${bookBase64}') format('woff');
           font-weight: 300;
           font-style: normal;
         }
 
-        /* Classes de Cor e Preenchimento extraídas do seu CSS */
-        .st0 { fill: #eff8eb; }
-        .st1 { fill: #e4f4de; }
-        .st2, .st3 { font-family: 'UniRegular'; }
-        .st4 { fill: #b2dfa1; }
-        .st3, .st5 { font-size: 90.7px; letter-spacing: 0em; }
-        .st3, .st5, .st6, .st7, .st8 { fill: #004e4c; }
-        .st9, .st10 { fill: #fff; }
-        .st11 { fill: none; stroke: #cbeac0; stroke-linecap: round; stroke-linejoin: round; }
-        .st12 { fill: #008c50; }
-        .st13 { fill: #008c50; }
-        .st14 { fill: #a6da93; }
-        .st15 { fill: #daf0d3; }
-        .st16 { fill: #9ad685; }
-        .st17, .st6, .st10, .st7 { font-weight: 700; }
-        .st17, .st10 { font-family: 'UniBold'; }
-        .st18 { fill: #8ed176; }
-        .st6 { font-family: 'UniBold'; font-size: 207.4px; letter-spacing: 0em; }
-        .st19 { fill: #bee4b1; }
-        .st20 { fill: #a0d98c; }
-        .st10 { font-size: 75px; }
-        .st21 { fill: #bae3ac; }
-        .st22 { fill: #f5fbf3; }
-        .st7 { font-family: 'UniSemiBoldItalic'; font-size: 90px; font-style: italic; }
-        .st23 { fill: #d4edcb; }
-        .st8 { font-family: 'UniLight'; font-size: 60px; }
-        .st24 { fill: #c5e7b9; }
-        .st25 { fill: #cbeac0; }
-        .st26 { fill: #b7e1a8; }
-        .st27 { fill: #addd9c; }
+
+        .st0 {fill: #038a51;}
+        .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8 {isolation: isolate;}
+        .st1, .st2, .st3, .st4, .st7, .st8 {fill: #004e4c;}
+        .st1, .st2, .st6, .st7 {font-weight: 700;}
+        .st1, .st3, .st4 {font-size: 90.7px;}
+        .st1, .st7 {font-family: 'UniBold';}
+        .st9, .st6 {fill: #fff;}
+        .st10, .st11 {fill: none;}
+        .st12 {fill: #008c50;}
+        .st13 {fill: url(#Gradiente_sem_nome);}
+        .st2 {font-family: 'UniSemiBoldItalic';font-size: 90px;font-style: italic;}
+        .st11 {stroke: #004e4c;stroke-miterlimit: 10;stroke-width: 6px;}
+        .st14 {clip-path: url(#clippath-1);}
+        .st3 {font-family: font-family: 'UniRegular';}
+        .st4 {font-family: font-family: 'UniRegular';}
+        .st6 {font-family: 'UniBold';font-size: 75px;}
+        .st7 {font-size: 207.4px;}
+        .st8 {font-family: 'UniBook'; font-size: 60px;}
+        .st15 {clip-path: url(#clippath);}
       `;
 
       style.appendChild(document.createTextNode(cssCompleto));
